@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo João Ricardo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+        }
+        .profile-img {
+            max-width: 180px;
+            border: 5px solid #ddd;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .text-center h2 {
+            color: #007bff;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .text-center strong {
+            font-weight: 600;
+        }
+        .nav-tabs .nav-link {
+            color: #007bff;
+            border: none;
+            border-bottom: 2px solid transparent;
+            margin-right: 15px;
+        }
+        .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
+            border-bottom-color: #007bff;
+            font-weight: bold;
+        }
+        .tab-content h3 {
+            color: #343a40;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0; /* Pode remover esta linha se não quiser a borda */
+            font-weight: 600;
+            position: relative; /* Necessário para posicionar a barra azul */
+            padding-left: 15px; /* Espaço para a barra não sobrepor o texto */
+        }
+
+        .tab-content h3::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px; /* Largura da barra azul - ajuste conforme preferir */
+            height: 100%;
+            background-color: #007bff; /* Cor azul - ajuste conforme preferir */
+            border-radius: 3px; /* Opcional: bordas arredondadas */
+        }
+
+        .tab-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .tab-content li {
+            margin-bottom: 8px;
+        }
+        .social-icon {
+            height: 35px;
+            margin: 0 8px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .social-icon:hover {
+            opacity: 1;
+        }
+        fieldset {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        legend {
+            width: auto;
+            padding: 0 10px;
+            border: none;
+            font-size: 1.1em;
+            color: #6c757d;
+        }
+        .form-group label {
+            font-weight: bold;
+            color: #495057;
+        }
+        .form-control {
+            border-radius: 4px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-secondary:hover {
+            background-color: #545b62;
+            border-color: #4e555b;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+        footer p {
+            margin-bottom: 0;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .col-md-4 {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHOlgKOJ669dw/profile-displayphoto-shrink_800_800/B4DZSFwIw8GUAg-/0/1737410777534?e=1749081600&v=beta&t=9Y04uVeO76ROOWIKIO-nbTHRiv7tRU6jEDGUqcLzeAk" alt="João Ricardo" title="JR" class="profile-img img-fluid">
+                    <h2>João Ricardo Vieira de Vasconcelos</h2>
+                    <p>
+                        Gosto de praticar exercícios físico e de correr, gosto muito de ir à praia e de praticar esportes como futebol, vôlei e até mesmo um pouco de basquete. Sou muito comunicativo, não sou perfeccionista mas gosto das coisas bem organizadas, trabalho bem em equipe e sou focado nos objetivos que quero para minha vida.<br><br>
+                        <strong>Telefone:</strong> <span id="numero_jr">(81) 99231-9246</span><br>
+                        <strong>Email:</strong> <a href="mailto:joaoricardovv@gmail.com">joaoricardovv@gmail.com</a><br><br>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-ricardo-23470b324/" target="_blank"> <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG39.png" alt="Linkedin" title="Linkedin de JR" class="social-icon"></a>
+                        <a href="https://github.com/jrvieira06" target="_blank"> <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="GitHUB" title="GitHUB de JR" class="social-icon"> </a>
+                        <a href="https://www.instagram.com/jrvieiraa.06?igsh=MTF1djZvZWZnbWd4Yw==" target="_blank"> <img src="https://img.freepik.com/premium-vector/instagram-app-icon-social-media-logo-vector-illustration_277909-403.jpg?w=1380" alt="insta" title="insta jr" class="social-icon"> </a>
+                        <a href="https://wa.me/qr/EHYA2DGAPSZQD1" target="_blank"> <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-4096.png" alt="zap" title="zap JR" class="social-icon"> </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <nav>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre" data-toggle="tab">Sobre Mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formacao" data-toggle="tab">Formação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencia" data-toggle="tab">Experiência</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hobbies" data-toggle="tab">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato" data-toggle="tab">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="tab-content mt-3">
+                    <div class="tab-pane fade show active" id="sobre">
+                        <h3>Sobre Mim</h3>
+                        <p> Graduado em Análise e Desenvolvimento de Sistemas pelo Serviço Nacional de Aprendizagem Comercial (SENAC), especializado em Desenvolvimento de Sistemas e de Softwares pela Universidade Católica de Pernambuco (UNICAP). <br>Já fui Estagiário como Suporte de TI na Microsoft New Center Brasil e Analista de Dados no Banco do Nordeste. Fui Analista de Sistemas do Banco do Brasil e atualmente sou Desenvolvedor de sistemas e softwares da Microsoft.</p>
+                    </div>
+                    <div class="tab-pane fade" id="formacao">
+                        <h3>Formação</h3><br>
+                        <ul>
+                            <li>Ensino médio completo <a href="https://www.instagram.com/erem.eld/">- EREM Engenheiro Lauro Diniz</a> (2021 a 2024)</li><br>
+                            <li>Formado em Análise e Desenvolvimento de Sistemas <a href="https://www.instagram.com/senacpe/">- SENAC</a> (2024.2 a 2027)</li><br>
+                            <li>Especializado em Desenvolvimento de sistemas e de softwares <a href="https://www.instagram.com/unicap.oficial/">- UNICAP</a> (2028 a 2031)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="experiencia">
+                        <h3>Experiência Profissional</h3><br>
+                        <ul>
+                            <li>Desenvolvedor de sistemas e softwares - Microsoft (Atual)</li><br>
+                            <li>Analista de Sistemas - Banco do Brasil</li><br>
+                            <li>Analista de Dados - Banco do Nordeste</li><br>
+                            <li>Estagiário como Suporte de TI - Microsoft New Center Brasil</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="hobbies">
+                        <h3>Hobbies</h3>
+                        <p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>VS Code</li>
+                                <li>Figma</li>
+                                <li>Miro</li>
+                                <li>Trello</li>
+                                <li>Canva</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="contato">
+                        <h3>Contato</h3>
+                        <fieldset>
+                            <legend>Informações de Contato</legend>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="nome">Nome:</label>
+                                    <input type="text" class="form-control" id="nome" name="nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sobrenome">Sobrenome:</label>
+                                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefone">Telefone:</label>
+                                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail:</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mensagem">Mensagem:</label>
+                                    <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lingua">Língua aplicada no serviço:</label>
+                                    <select class="form-control" id="lingua" name="lingua">
+                                        <option>Inglês</option>
+                                        <option>Espanhol</option>
+                                        <option>Francês</option>
+                                        <option>Português (pt-br)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="prototipo">Enviar Protótipo (PDF, DOC, DOCX, JPEG, PNG):</label>
+                                    <input type="file" class="form-control-file" id="prototipo" name="prototipo" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png">
+                                </div>
+                                <div class="form-group">
+                                    <label>Linguagens Preferidas:</label><br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="java" name="linguagens[]" value="Java">
+                                        <label class="form-check-label" for="java">Java</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="python" name="linguagens[]" value="Python">
+                                        <label class="form-check-label" for="python">Python</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="javascript" name="linguagens[]" value="JavaScript">
+                                        <label class="form-check-label" for="javascript">JavaScript</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="CSS" name="linguagens[]" value="CSS">
+                                        <label class="form-check-label" for="CSS">CSS</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="HTML" name="linguagens[]" value="HTML">
+                                        <label class="form-check-label" for="HTML">HTML</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                                <button type="reset" class="btn btn-secondary">Limpar</button>
+                            </form>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br><br>
+<center><p>&copy; 2025 João Ricardo Vieira de Vasconcelos</p></center>
